@@ -1,40 +1,34 @@
 # SeaMonkey styling. Mostly icon replacements
-
+skin	chatzilla		xpfeclassic/1.0 chatzilla/
 skin	communicator		xpfeclassic/1.0	communicator/
-skin	editor				xpfeclassic/1.0	editor/
-skin	messenger			xpfeclassic/1.0	messenger/
+skin	editor			xpfeclassic/1.0	editor/
+skin	messenger		xpfeclassic/1.0	messenger/
 skin	messenger-newsblog	xpfeclassic/1.0	messenger-newsblog/
-skin	navigator			xpfeclassic/1.0	navigator/
-
-
+skin	navigator		xpfeclassic/1.0	navigator/
 
 # Toolkit styling. Heavy changes here to emulate XPFE look&feel
+skin	global			xpfeclassic/1.0	global/
+skin	mozapps			xpfeclassic/1.0	mozapps/
 
-skin	global				xpfeclassic/1.0	global/
-skin	mozapps				xpfeclassic/1.0	mozapps/
-
-skin	platform			xpfeclassic/1.0	win/
-skin	platform			xpfeclassic/1.0	unix/	os=Linux
-
+skin	platform		xpfeclassic/1.0	win/
+skin	platform		xpfeclassic/1.0	unix/	os=Linux
 
 # Help manager
-skin	help				xpfeclassic/1.0	help/	appversion<2.47
-
+skin	help			xpfeclassic/1.0	help/	appversion<2.47
 
 # Addon manager
-
-style	chrome://mozapps/content/extensions/extensions.xul	chrome://global/skin/inContentUI.css					appversion<2.37
-style	chrome://mozapps/content/extensions/extensions.xul	chrome://mozapps/skin/extensions/extensions-new.css		appversion>=2.37
+style	chrome://mozapps/content/extensions/extensions.xul	chrome://global/skin/inContentUI.css			appversion<2.37
+style	chrome://mozapps/content/extensions/extensions.xul	chrome://mozapps/skin/extensions/extensions-new.css	appversion>=2.37
 style	chrome://mozapps/content/extensions/extensions.xul	chrome://mozapps/skin/extensions/extensions-new2.css	appversion>=2.46
-style	about:addons										chrome://global/skin/inContentUI.css					appversion<2.37
-style	about:addons										chrome://mozapps/skin/extensions/extensions-new.css		appversion>=2.37
-style	about:addons										chrome://mozapps/skin/extensions/extensions-new2.css	appversion>=2.46
+style	about:addons						chrome://global/skin/inContentUI.css			appversion<2.37
+style	about:addons						chrome://mozapps/skin/extensions/extensions-new.css	appversion>=2.37
+style	about:addons						chrome://mozapps/skin/extensions/extensions-new2.css	appversion>=2.46
 
 # about:privatebrowsing
 style	chrome://communicator/content/aboutPrivateBrowsing.xul	chrome://communicator/skin/aboutPrivateBrowsing-new.css	appversion>=2.37
 style	chrome://communicator/content/aboutPrivateBrowsing.xul	chrome://communicator/skin/aboutPrivateBrowsing-old.css	appversion<2.37
-style	about:privatebrowsing									chrome://communicator/skin/aboutPrivateBrowsing-new.css	appversion>=2.37
-style	about:privatebrowsing									chrome://communicator/skin/aboutPrivateBrowsing-old.css	appversion<2.37
+style	about:privatebrowsing					chrome://communicator/skin/aboutPrivateBrowsing-new.css	appversion>=2.37
+style	about:privatebrowsing					chrome://communicator/skin/aboutPrivateBrowsing-old.css	appversion<2.37
 
 style	chrome://global/content/customizeToolbar.xul		chrome://messenger/skin/addressbook/addressbook.css
 style	chrome://global/content/customizeToolbar.xul		chrome://messenger/skin/messengercompose/messengercompose.css
