@@ -12,6 +12,11 @@
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+treechildren::-moz-tree-row(hover) {
+    background-color: blue;
+    color: white;
+}
+
 /* :::::
    :: Make sure the min height is small so we can
    :: resize the pane vertically -EDV
@@ -148,8 +153,8 @@ tabpanels {
 }
 
 #tabbar-toolbar {
-  -moz-appearance: none;
-  border-top-style: none;
-  border-bottom-style: none;
-  min-height: 0;
+    -moz-appearance: none;
+    border-top-style: none;
+    border-bottom-style: none;
+    min-height: 0;
 }
