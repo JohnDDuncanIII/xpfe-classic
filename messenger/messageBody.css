@@ -30,13 +30,14 @@
 
 /* ::::: message text, incl. quotes ::::: */
 
-.moz-text-flowed blockquote,
-.moz-text-plain blockquote {
-  margin: 0;
+.moz-text-flowed blockquote {
+  margin: inherit;
+  border-width: medium;
+  border-color: gray;
 }
 
 .moz-text-plain pre {
-  margin: 0;
+  margin: inherit;
   font-family: inherit;
 }
 
@@ -53,8 +54,15 @@
 }
 
 .moz-text-plain[graphical-quote="false"] blockquote {
-  border-style: none;
-  padding: 0;
+  margin: inherit;
+  border-left: inherit;
+  -moz-padding-start: inherit;
+}
+
+.moz-text-plain[graphical-quote="true"] blockquote {
+  margin: inherit;
+  border-width: medium;
+  border-color: gray;
 }
 
 .moz-text-plain[graphical-quote="true"] .moz-txt-citetags {
@@ -98,39 +106,35 @@
 }
 
 .moz-vcard-title-property {
-}
+} 
 
 .moz-vcard-badge {
-  height: 30px;
-  width: 30px;
+  height: 21px;
+  width: 23px;
   display: block;
-  background-image: url("chrome://messenger/skin/icons/messengericons.png");
-  background-position: 0px -270px;
+  background-image: url("chrome://messenger/skin/icons/btn1.gif");
+  background-position: 0px 0px;
 }
 
 .moz-vcard-badge:hover {
-  background-position: -30px -270px;
+  background-position: -23px 0px;
   outline: 1px dotted;
 }
 
 .moz-vcard-badge:hover:active {
-  background-position: -60px -270px;
+  background-position: -46px 0px;
 }
 
 /* ::::: attached images ::::: */
-.moz-attached-image-container {
-  text-align: center;
-}
-
 .moz-attached-image {
   image-orientation: from-image;
 }
 
-.moz-attached-image[overflowing="true"] {
+.moz-attached-image[overflowing="true"] { 
   cursor: zoom-out;
 }
 
-.moz-attached-image[isshrunk="true"] {
+.moz-attached-image[isshrunk="true"] { 
   cursor: zoom-in;
   max-width: 100%;
 }

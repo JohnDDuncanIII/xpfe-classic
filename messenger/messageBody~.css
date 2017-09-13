@@ -7,6 +7,7 @@
   ======================================================================= */
 
 @import url(chrome://communicator/skin/smileys.css);
+@import url(chrome://messenger/skin/messageQuotes.css);
 
 @namespace url("http://www.w3.org/1999/xhtml");
 
@@ -29,14 +30,13 @@
 
 /* ::::: message text, incl. quotes ::::: */
 
-.moz-text-flowed blockquote {
-  margin: inherit;
-  border-width: medium;
-  border-color: gray;
+.moz-text-flowed blockquote,
+.moz-text-plain blockquote {
+  margin: 0;
 }
 
 .moz-text-plain pre {
-  margin: inherit;
+  margin: 0;
   font-family: inherit;
 }
 
@@ -53,15 +53,8 @@
 }
 
 .moz-text-plain[graphical-quote="false"] blockquote {
-  margin: inherit;
-  border-left: inherit;
-  -moz-padding-start: inherit;
-}
-
-.moz-text-plain[graphical-quote="true"] blockquote {
-  margin: inherit;
-  border-width: medium;
-  border-color: gray;
+  border-style: none;
+  padding: 0;
 }
 
 .moz-text-plain[graphical-quote="true"] .moz-txt-citetags {
@@ -105,35 +98,39 @@
 }
 
 .moz-vcard-title-property {
-} 
+}
 
 .moz-vcard-badge {
-  height: 21px;
-  width: 23px;
+  height: 30px;
+  width: 30px;
   display: block;
-  background-image: url("chrome://messenger/skin/icons/btn1.gif");
-  background-position: 0px 0px;
+  background-image: url("chrome://messenger/skin/icons/messengericons.png");
+  background-position: 0px -270px;
 }
 
 .moz-vcard-badge:hover {
-  background-position: -23px 0px;
+  background-position: -30px -270px;
   outline: 1px dotted;
 }
 
 .moz-vcard-badge:hover:active {
-  background-position: -46px 0px;
+  background-position: -60px -270px;
 }
 
 /* ::::: attached images ::::: */
+.moz-attached-image-container {
+  text-align: center;
+}
+
 .moz-attached-image {
   image-orientation: from-image;
 }
 
-.moz-attached-image[overflowing="true"] { 
+.moz-attached-image[overflowing="true"] {
   cursor: zoom-out;
 }
 
-.moz-attached-image[isshrunk="true"] { 
+.moz-attached-image[isshrunk="true"] {
   cursor: zoom-in;
   max-width: 100%;
 }
