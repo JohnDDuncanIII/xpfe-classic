@@ -11,8 +11,8 @@
 }
 
 body {
-  border: 1px solid ThreeDShadow;
-  border-radius: 10px;
+  border: 3px double ThreeDShadow;
+  /*border-radius: 10px;*/
   padding: 3em;
   min-width: 30em;
   max-width: 65em;
@@ -75,6 +75,10 @@ th:last-child {
 
 th:hover > a {
   text-decoration: underline;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: ghostwhite;
 }
 
 body > table > tbody > tr:hover {

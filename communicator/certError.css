@@ -29,8 +29,8 @@ h2 {
   min-width: 13em;
   max-width: 52em;
   margin: 4em auto;
-  border: 1px solid #FFBD09;
-  border-radius: 10px;
+  border: 3px double #FFBD09;
+  /*border-radius: 10px;*/
   padding: 3em;
   -moz-padding-start: 30px;
   background: url("chrome://global/skin/icons/sslWarning.gif") left 0 no-repeat -moz-Field;
